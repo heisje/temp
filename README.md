@@ -41,13 +41,13 @@ LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID;
 조인을 검색해보면 다음과 같은 이미지를 만난다.
 FROM의 TABLE이 왼쪽이고, JOIN의 TABLE이 오른쪽이라고 생각하면 이해하기 쉽다. OUTER 키워드는 생략가능
 
-![alt text](image-1.png)
+![alt text](assets/image-1.png)
 그래서 LEFT OUTER JOIN의 위 쿼리의 경우, 같은 값이 없더라도 A의 값을 출력하며, B는 NULL로 나온다.
 
 ### Inner
 
 같은 값이 있는 경우만 출력한다.
-![alt text](image.png)
+![alt text](assets/image.png)
 
 ```sql
 -- INNER
@@ -56,7 +56,7 @@ FROM Customers
 INNER JOIN Orders ON Customers.CustomerID = Orders.CustomerID;
 ```
 
-![alt text](image-3.png)
+![alt text](assets/image-3.png)
 
 ### LEFT
 
@@ -69,7 +69,7 @@ FROM Customers
 LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID;
 ```
 
-![alt text](image-4.png)
+![alt text](assets/image-4.png)
 
 ### RIGHT
 
@@ -82,7 +82,7 @@ FROM Customers
 RIGHT JOIN Orders ON Customers.CustomerID = Orders.CustomerID;
 ```
 
-![alt text](image-5.png)
+![alt text](assets/image-5.png)
 
 ### FULL
 
@@ -95,7 +95,7 @@ FROM Customers
 FULL JOIN Orders ON Customers.CustomerID = Orders.CustomerID;
 ```
 
-![alt text](image-6.png)
+![alt text](assets/image-6.png)
 
 ### CROSS
 
